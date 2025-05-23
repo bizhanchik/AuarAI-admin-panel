@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin panel</h1>
+
+        <div class="form-group">
+            <label for="token">JWT-Token</label>
+            <input type="text" id="token" placeholder="Type in your Bearer token">
+        </div>
+
+        <form action="addClothForm">
+            <div class="form-group">
+                <label> Name
+                    <input type="text" name="name" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Brand
+                    <input type="text" name = "brand">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Category
+                    <input type="text" name="category" required/>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label >
+                    <select name="gender" required>
+                        <option value="">choos</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="unisex">unisex</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Colors
+                    <input type="text" name = "color" placeholder="(ex: black,white,etc.)"/>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label> Sizes
+                    <input type="text" name="size" placeholder="ex: S,M,L">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Материал
+                    <input type="text" name="material">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Description
+                    <textarea name="description" rows="3"></textarea>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Shop URL
+                    <input type="url" name="storeURL">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label>Cloth URL
+                    <input type="url" name = "productURL" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Price
+                    <input type="number" name = "price" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Tags
+                    <input type="text" name = "tags" placeholder="streetwear, casual">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Occasions
+                    <input type="text" name = "occasions" placeholder="everyday, party">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Weather
+                    <input type="text" name="weatherSuiatbility" placeholder="wind, sun">
+                </label>
+            </div>
+
+            <button type="submit">Добавить вещь</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
