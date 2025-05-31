@@ -15,96 +15,92 @@
             <input type="text" id="token" placeholder="Type in your Bearer token">
         </div>
 
-        <form action="addClothForm">
+        <form id="addClothForm">
             <div class="form-group">
-                <label> Name
-                    <input type="text" name="name" required/>
-                </label>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required/>
             </div>
             <div class="form-group">
-                <label>Brand
-                    <input type="text" name = "brand">
-                </label>
+                <label for="brand">Brand</label>
+                <input type="text" id="brand" name="brand">
             </div>
 
             <div class="form-group">
-                <label>Category
-                    <input type="text" name="category" required/>
-                </label>
+                <label for="category">Category</label>
+                <input type="text" id="category" name="category" required/>
             </div>
 
             <div class="form-group">
-                <label >
-                    <select name="gender" required>
-                        <option value="">choos</option>
-                        <option value="male">male</option>
-                        <option value="female">female</option>
-                        <option value="unisex">unisex</option>
-                    </select>
-                </label>
+                <label for="genderSelect">Gender</label>
+                <select name="gender" id="genderSelect" required>
+                    <option value="">choose</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="unisex">unisex</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <label>Colors
-                    <input type="text" name = "color" placeholder="(ex: black,white,etc.)"/>
-                </label>
+                <label for="color">Colors</label>
+                <input type="text" id="color" name="color" placeholder="(ex: black,white,etc.)"/>
             </div>
 
             <div class="form-group">
-                <label> Sizes
-                    <input type="text" name="size" placeholder="ex: S,M,L">
-                </label>
+                <label for="size">Sizes</label>
+                <input type="text" id="size" name="size" placeholder="ex: S,M,L">
             </div>
 
             <div class="form-group">
-                <label>Материал
-                    <input type="text" name="material">
-                </label>
+                <label for="material">Material</label>
+                <input type="text" id="material" name="material">
             </div>
 
             <div class="form-group">
-                <label>Description
-                    <textarea name="description" rows="3"></textarea>
-                </label>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="3"></textarea>
             </div>
 
             <div class="form-group">
-                <label>Shop URL
-                    <input type="url" name="storeURL">
-                </label>
-            </div>
-            
-            <div class="form-group">
-                <label>Cloth URL
-                    <input type="url" name = "productURL" required>
-                </label>
+                <label for="storeName">Store Name</label>
+                <input type="text" id="storeName" name="storeName" required>
             </div>
 
             <div class="form-group">
-                <label>Price
-                    <input type="number" name = "price" required>
-                </label>
+                <label for="storeURL">Shop URL</label>
+                <input type="url" id="storeURL" name="storeURL">
             </div>
 
             <div class="form-group">
-                <label>Tags
-                    <input type="text" name = "tags" placeholder="streetwear, casual">
-                </label>
+                <label for="imageURL">Image URL</label>
+                <input type="url" id="imageURL" name="imageURL">
             </div>
 
             <div class="form-group">
-                <label>Occasions
-                    <input type="text" name = "occasions" placeholder="everyday, party">
-                </label>
+                <label for="productURL">Cloth URL</label>
+                <input type="url" id="productURL" name="productURL" required>
             </div>
 
             <div class="form-group">
-                <label>Weather
-                    <input type="text" name="weatherSuiatbility" placeholder="wind, sun">
-                </label>
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" required>
             </div>
 
-            <button type="submit">Добавить вещь</button>
+            <div class="form-group">
+                <label for="tags">Tags</label>
+                <input type="text" id="tags" name="tags" placeholder="streetwear, casual">
+            </div>
+
+            <div class="form-group">
+                <label for="occasions">Occasions</label>
+                <input type="text" id="occasions" name="occasions" placeholder="everyday, party">
+            </div>
+
+            <div class="form-group">
+                <label for="weatherSuitability">Weather</label>
+                <input type="text" id="weatherSuitability" name="weatherSuitability" placeholder="wind, sun">
+            </div>
+
+            <button type="submit">Add Cloth</button>
         </form>
         <div id="message"></div>
     </div>
